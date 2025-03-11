@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="Generator/generator.css">
+</head>
+
+
+<body>
+    <!-- Hamburger Button -->
+<div class="header">
+    <span class="hamburger" onclick="toggleMenu()">&#9776;</span>
+    POP Picker!
+</div>
+
+<!-- Hamburger Side Menu -->
+<div id="sideMenu" class="side-menu">
+    <a href="javascript:void(0)" class="closebtn" onclick="toggleMenu()">&times;</a>
+    <a href="index.html">Home</a>
+    <a href="quiz.html">Quiz</a>
+    <a href="generator.html">Generator</a>
+    <a href="collection.html">Collections</a>
+</div>
+
+    <div class="button-container">
+        <button class="button" onclick="location.href='index.html'">Back to Home</button>
+        <button class="button" onclick="window.location.reload()">Refresh</button>
+    </div>
+    
+    <div id="categories"></div>
+
+</body>
+
+<script src="Generator/generator.js"></script>
+
+</html>
