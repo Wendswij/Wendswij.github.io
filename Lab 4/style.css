@@ -1,0 +1,17 @@
+    body {
+        margin: 0;
+        overflow: hidden;
+    }
+
+    .button-group {
+        position: fixed;
+        top: 20px;
+        left: 20px;
+        z-index: 10;
+    }
+
+    button {
+        margin: 5px;
+        padding: 10px;
+        font-size: 16px;
+    }
