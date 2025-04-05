@@ -22,7 +22,7 @@
       jellyfish.volume(0); // mute any audio from image
 
       // audio
-      meow = createAudio('Assets/meow.mp3');
+      meow = createAudio('Assets/kitty.mp3');
       woof = createAudio('Assets/woof.mp3');
       meow.hide();
       woof.hide();
