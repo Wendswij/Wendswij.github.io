@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Text Adventure</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="p5.min.js"></script>
+  <script src="sketch.js"></script>
+  <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap" rel="stylesheet"> <!-- Trying to use outside fonts. working. -->
+</head>
+
+<body>
+  <h1>🌲 Find the Animal 🌲</h1>
+  
+  <div id="controls">
+    <input id="playerName" class="domInput" type="text" placeholder="Enter your name">
+    <br>
+    <div id="difficultyContainer">
+      <label for="difficultySlider">Difficulty: </label>
+      <input id="difficultySlider" class="domInput" type="range" min="0" max="100" value="50">
+    </div>
+    <br>
+    <button id="fullScreenButton" class="controlButton">Fullscreen</button>
+  </div>
+  
+  <div id="scoreTime">
+    <span id="scoreDisplay">Score: 0</span> | <span id="timeDisplay">Time: 30 s</span>
+  </div>
+  
+  <div id="wordBar">Find: </div>
+
+  <div id="canvasContainer"></div>
+  
+</body>
+</html>
