@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>WendsWij</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <!-- Header -->
+  <nav>
+    <img src="images/icon.png" alt="Icon" class="nav-icon" id="sound-icon">
+    <a href="labs/labs.html">Labs</a>
+    <a href="project/project.html">Projects</a>
+    <a href="Old Website/old.html">Ver.1</a>
+  </nav>
+
+  <!-- Audio Text Info -->
+  <audio id="click-sound" src="audio/aftertaste.mp3" preload="auto"></audio>
+  <p id="hint">^ Press the Icon ^</p>
+
+  <!-- Homepage Hero Section/Main Page -->
+  <section class="homepage-hero">
+    <h1 id="welcome">Welcome to...</h1>
+    <h1 id="wendys"><a href="https://www.instagram.com/wendyywijaya/" id="wendys-link">Wendy's</a></h1>
+    <img src="images/cafe bear.png" id="bear-illustration" alt="Bear">
+    <img src="images/disc.png" id="disc" alt="Spinning Disc">
+  </section>
+
+  <!-- The Menu Section -->
+  <section class="sec-section">
+    <h2 class="menu-title">The Menu</h2>
+    <p id="menu-desc">Click Card to Order.</p>
+
+    <br>
+    <br>
+
+    <div class="menu-grid">
+
+      <!-- Menu Card 1 -->
+      <a href="https://onemillionpats.com" class="menu-item" target="_blank">
+        <img src="images/ramiba.jpg" alt="Shiramen">
+        <h3>Shiramen</h3>
+        <p class="item-desc">A Shiba inu twist on a bowl of ramen, filled with slurpable joy, chill vibes, and an extra
+          helping of adorable.</p>
+      </a>
+
+      <!-- Menu Card 2 -->
+      <a href="https://www.onemillionpats.com/toble/" class="menu-item" target="_blank">
+        <img src="images/toshiba.jpg" alt="Shibafu">
+        <h3>Shibafu</h3>
+        <p class="item-desc">A soft cube of wobbly tofu with a Shiba Inu twist, lightly seasoned with fun and wobble
+          physics for a perfectly playful bite.</p>
+      </a>
+
+      <!-- Menu Card 3 -->
+      <a href="https://www.youtube.com/watch?v=2GgiZZhO-PA" class="menu-item" target="_blank">
+        <img src="images/caturger.jpg" alt="Caturger">
+        <h3>Caturger</h3>
+        <p class="item-desc">A sizzling street-style burger with a kitty twist, stacked high with flavor, flair, and
+          unstoppable breakdance energy.</p>
+      </a>
+    </div>
+  </section>
+
+  <!-- P5.js Animation Sketch Section -->
+  <section class="third-section">
+    <h2 class="menu-title">Animation Sketch</h2>
+    <div id="p5-container" class="p5-center"></div>
+    <script src="p5.min.js"></script>
+    <script src="animation.js"></script>
+  </section>
+
+  <!-- Just the Footer -->
+  <footer>
+    <p>© 2025 Wendy Wijaya.</p>
+  </footer>
+
+</body>
+
+<script src="script.js"></script>
+
+</html>

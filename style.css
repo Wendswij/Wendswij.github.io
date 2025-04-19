@@ -1,0 +1,278 @@
+/* ========== Global Styles ========== */
+html, body {
+  overflow-x: hidden;
+  width: 100%;
+}
+
+body {
+  background-color: #e2fafa;
+  color: #111;
+  font-family: monospace;
+}
+
+/* ========== Main page Styling ========== */
+.homepage-hero {
+  margin-top: var(--header-height);
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+}
+
+#welcome {
+  font-family: 'Gill Sans', 'Gill Sans MT', 'Calibri', 'Trebuchet MS', sans-serif;
+  font-weight: 500;
+  font-size: 40px;
+  letter-spacing: -1px;
+  position: absolute;
+  top: 62vh;
+  left: 20px;
+  margin-bottom: -40px;
+  color: #11111190;
+}
+
+#wendys {
+  font-family: monospace;
+  font-size: 180px;
+  font-weight: 100;
+  position: absolute;
+  top: 50vh;
+  left: 20px;
+  color: #111;
+}
+
+#wendys a {
+  color: #111;
+  text-decoration: none;
+  display: inline-block;
+  animation: pulse 2s infinite ease-in-out;
+  animation-play-state: running;
+  transition: color 0.3s ease;
+}
+
+#wendys a:hover {
+  animation-play-state: paused;
+  color: #5D3FD3;
+}
+
+/* ========== ^^^ Pulse Animation for "Wendy's" Text  ^^^========== */
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.05);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+/* ========== The Bear Illustration and the SPinny Disc Image ========== */
+#bear-illustration {
+  height: 70vh;
+  margin-left: -40px;
+  z-index: 0;
+  transform: translateY(-5%);
+}
+
+#disc {
+  width: 850px;
+  position: absolute;
+  top: -20px;
+  left: 75%;
+  transform: translateX(-50%);
+  animation: spin 20s linear infinite;
+  transform-origin: center center;
+  z-index: -1;
+}
+
+/* ========== ^^^ Spin Animation for the Disc ^^^ ========== */
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* ========== Hint Info ========== */
+#hint {
+  position: absolute;
+  top: 10vh;
+  left: 20px;
+  color: #00000050;
+}
+
+/* ========== Header ========== */
+.nav-icon {
+  height: 30px;
+  width: auto;
+  margin-right: auto;
+  align-self: center;
+}
+
+nav {
+  display: flex;
+  justify-content: flex-end;
+  gap: 30px;
+  padding: 20px 40px;
+  border-bottom: 3px solid #000;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+nav a {
+  text-decoration: none;
+  color: #111;
+  position: relative;
+}
+
+nav a::after {
+  content: '';
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+  height: 2px;
+  width: 0%;
+  background: #000;
+  transition: width 0.3s ease;
+}
+
+nav a:hover::after {
+  width: 100%;
+}
+
+/* ========== The Menu Section Styling ========== */
+.sec-section {
+  position: relative;
+  padding: 60px;
+  background-image: url('images/graph.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.sec-section::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 4px;
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+.menu-title {
+  font-family: monospace;
+  font-size: 42px;
+  text-align: center;
+  margin-bottom: 60px;
+  letter-spacing: 1px;
+}
+
+#menu-desc {
+  font-family: monospace;
+  text-align: center;
+  margin-top: -50px;
+}
+
+.menu-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 40px;
+  padding: 0 40px;
+  position: relative;
+}
+
+.menu-item {
+  display: block;
+  text-decoration: none;
+  color: inherit;
+  width: 250px;
+  height: auto;
+  background-color: #fff8e7;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  position: relative;
+  transform: rotate(-1deg);
+  transition: all 0.2s ease-in-out;
+  z-index: 1;
+}
+
+.menu-item:nth-child(2n) {
+  transform: rotate(1.5deg);
+  z-index: 2;
+}
+
+.menu-item:nth-child(3n) {
+  transform: rotate(-2.5deg);
+  z-index: 3;
+}
+
+.menu-item:hover {
+  transform: rotate(0deg) scale(1.05);
+  z-index: 10;
+}
+
+.menu-item img {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+  border-radius: 4px;
+  margin-bottom: 10px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+}
+
+.menu-item h3 {
+  font-family: 'Courier New', monospace;
+  font-size: 16px;
+  margin-bottom: 8px;
+  color: #333;
+}
+
+.item-desc {
+  font-size: 13px;
+  color: #555;
+  font-style: italic;
+  margin-top: 5px;
+  line-height: 1.4;
+}
+
+/* ========== Animation Sketch Centered Styling ========== */
+.third-section {
+  position: relative;
+  padding: 60px;
+}
+
+.third-section::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 4px;
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+.p5-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* ========== Footer ========== */
+footer {
+  font-family: monospace;
+  width: 100%;
+  margin-top: 5px;
+  padding: 8px;
+  text-align: center;
+  font-size: 14px;
+  color: #555;
+  border-top: 2px solid #cccccc2a;
+}

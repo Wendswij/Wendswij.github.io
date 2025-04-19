@@ -1,0 +1,159 @@
+/* ========== Basic Styles ========== */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    background-color: #FAF9F6;
+    color: #000;
+    line-height: 1.5;
+  }
+  
+/* ========== Container ========== */
+  .container {
+    max-width: 1200px;
+    margin: 60px auto;
+    padding: 0 20px;
+  }
+  
+/* ========== Header ========== */
+  .header {
+    font-family: monospace;
+    border-bottom: 5px solid #ccc;
+    padding-bottom: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  .lab-icon {
+    width: 20vh;
+    height: auto;
+    align-self: flex-start;
+    margin-left: 20px;
+    margin-top: -8vh;
+  }
+  
+/* ========== Labs ========== */
+  .labs {
+    font-size: 120px;
+    font-weight: bold;
+    line-height: 1;
+  }
+  
+  .top-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 40px;
+    margin-top: 10px;
+  }
+  
+  .desc-title {
+    font-size: 32px;
+    font-weight: 400;
+  }
+  
+/* ========== The full list ========== */
+  .list-section {
+    margin-top: 60px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    padding-right: 90px;
+  }
+  
+/* ========== For each entry ========== */
+  .list-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 40px;
+    border-top: 2px solid #ccc;
+    padding: 40px 0;
+    width: 50%;
+    max-width: 700px;
+  }
+  
+/* ========== Bottom border to seperate/end it ========== */
+  .list-item:last-child {
+    border-bottom: 2px solid #ccc;
+  }
+  
+/* ========== The lab numbers ========== */
+  .list-item .number {
+    font-size: 32px;
+    font-weight: 400;
+    color: #000;
+    flex-shrink: 0;
+    width: 50px;
+    text-align: right;
+  }
+  
+/* ========== Lab link styling ========== */
+  .list-item .text a {
+    text-decoration: none;
+    color: #111;
+    position: relative;
+    display: inline-block;
+    font-weight: 500;
+  }
+  
+  .list-item .text a::after {
+    content: '';
+    position: absolute;
+    bottom: -3px;
+    left: 0;
+    height: 2px;
+    width: 0%;
+    background: #000;
+    transition: width 0.3s ease;
+  }
+  
+  .list-item .text a:hover {
+    color: #000000a8;
+  }
+  
+  .list-item .text a:hover::after {
+    width: 100%;
+    background: #000000aa;
+  }
+  
+/* ========== Back Button ========== */
+  .back-button {
+    text-align: center;
+    margin: 60px 0 20px;
+  }
+  
+  .back-button a {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #000;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 6px;
+    font-size: 14px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+  }
+  
+  .back-button a:hover {
+    background-color: #00000065;
+    transform: translateY(-2px);
+  }
+  
+/* ========== Footer ========== */
+  footer {
+    font-family: monospace;
+    width: 100%;
+    margin-top: 100px;
+    padding: 20px 0;
+    text-align: center;
+    font-size: 14px;
+    color: #555;
+    background-color: #f0f0f0;
+    border-top: 2px solid #ccc;
+  }
+  
+  footer p {
+    margin: 0;
+    font-weight: 300;
+  }
+  

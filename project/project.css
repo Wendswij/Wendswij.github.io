@@ -1,0 +1,144 @@
+/* ========== Basic Styles ========== */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Courier New', Courier, monospace;
+    background-color: #f5f5f5;
+    color: #111;
+    line-height: 1.6;
+    background-image: repeating-linear-gradient(
+      to bottom,
+      transparent,
+      transparent 29px,
+      rgba(0, 0, 0, 0.05) 30px
+    );
+  }
+  
+/* ========== Title Styling ========== */
+  .title {
+    font-family: monospace;
+    font-size: 80px;
+    text-align: center;
+    letter-spacing: 10px;
+    font-weight: bold;
+    margin: 30px 0 10px;
+  }
+  
+/* ========== Back Button ========== */
+  .back-button {
+    font-family: monospace;
+    display: inline-block;
+    background-color: #00A36C;
+    color: white;
+    font-size: 14px;
+    padding: 8px 16px;
+    margin: 20px;
+    border: none;
+    border-radius: 6px;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-decoration: none;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  }
+  
+  .back-button:hover {
+    background-color: #008f5a;
+    transform: translateY(-2px);
+  }
+  
+/* ========== The Description ========== */
+  .description {
+    font-family: 'Courier New', Courier, monospace;
+    max-width: 800px;
+    margin: 10px auto 20px;
+    font-size: 28px;
+    text-align: center;
+  }
+  
+/* ========== The Grid ========== */
+  .grid {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin: 50px 0;
+    flex-wrap: wrap;
+  }
+  
+/* ========== Box/card styling ========== */
+  .box {
+    background-color: white;
+    border: 1px solid #ccc;
+    padding: 30px;
+    width: 250px;
+    height: 320px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: relative;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+    box-sizing: border-box;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+  }
+  
+  .box .top-label {
+    font-size: 14px;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid #111;
+    padding-bottom: 10px;
+  }
+  
+  .box .number {
+    font-size: 60px;
+    font-weight: bold;
+    margin: 20px 0;
+    font-family: 'Courier New', monospace;
+    position: relative;
+    z-index: 1;
+  }
+  
+  .box .description {
+    font-size: 10px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    margin-top: 10px;
+    border-top: 1px solid #111;
+    padding-top: 10px;
+  }
+  
+  .box-link {
+    text-decoration: none;
+    color: inherit;
+    display: block;
+    transition: transform 0.2s ease;
+  }
+  
+  .box-link:hover .box {
+    transform: translateY(-5px);
+    background-color: #00A36C;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+  }
+  
+/* ========== Footer ========== */
+  footer {
+    font-family: monospace;
+    width: 100%;
+    margin-top: 100px;
+    padding: 10px 0;
+    text-align: center;
+    font-size: 14px;
+    color: #555;
+    background-color: #f0f0f0;
+    border-top: 2px solid #ccc;
+  }
+  
+  footer p {
+    margin: 0;
+    font-weight: 300;
+  }
+  
